@@ -17,7 +17,7 @@ else # set
 			# start process 
 			# write pid to file
 			cd $RUN_BIN_LOC
-			./led-image-viewer -f --led-gpio-mapping=adafruit-hat --led-slowdown-gpio=2 --led-no-hardware-pulse --led-rows=32 --led-cols=64 $IMG_LOC/* &>/dev/null &
+			./led-image-viewer -f --led-gpio-mapping=adafruit-hat --led-slowdown-gpio=3 --led-no-hardware-pulse --led-rows=32 --led-cols=64 $IMG_LOC/* &>/dev/null &
 			echo "$!" > "$STATE_FILE"
 		fi
 	else # turn off
